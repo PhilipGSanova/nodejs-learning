@@ -4,8 +4,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/fruitsdb';
+const PORT = process.env.PORT;
+const MONGO_URI = process.env.MONGODB_URI;
 
 // Middleware
 app.use(express.json());
